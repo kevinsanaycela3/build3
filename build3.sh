@@ -41,6 +41,8 @@ then
         	else
                 	echo "We did not push $file_name to the main repo because sensitive information was detected."
         	fi
+	else
+		echo "Ok, script has terminated."
 	fi
 else
 	echo "It appears that $file_name does not exist in your local repo. Please rerun the script again with a file that exists."

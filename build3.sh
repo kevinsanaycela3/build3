@@ -18,6 +18,11 @@ git config --global user.email "$email"
 echo "Thank you! Enter the name of the file in your local directory you'd like to commit, with the extension: " 
 read file_name
 
+if [ -f $file_name ] ;
+then
+	echo "File exists"
+fi
+
 echo "Would you like to add and commit the files currently in your local directory? (Yes/No) "
 read user_answer 
 
